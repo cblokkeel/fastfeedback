@@ -27,7 +27,7 @@ const GlobalStyle = ({ children }) => {
   );
 };
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return (
     <ChakraProvider theme={customTheme}>
       <AuthProvider>
@@ -36,6 +36,6 @@ function MyApp({ Component, pageProps }) {
       </AuthProvider>
     </ChakraProvider>
   );
-}
+};
 
 export default MyApp;
