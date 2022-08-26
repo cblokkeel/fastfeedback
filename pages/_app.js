@@ -12,8 +12,8 @@ const GlobalStyle = ({ children }) => {
       <Global
         styles={css`
           html {
+            scroll-behavior: smooth;git 
             min-width: 360px;
-            scroll-behavior: smooth;
           }
           #__next {
             display: flex;
