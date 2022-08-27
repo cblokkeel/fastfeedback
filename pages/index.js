@@ -19,7 +19,9 @@ const Home = () => {
       </Head>
       <LogoIcon fontSize="64px" />
       {auth.user ? (
-        <Button onClick={() => auth.signout()}>Sign Out</Button>
+        <Button as="a" href="/dashboard">
+          View Dashboard
+        </Button>
       ) : (
         <Button mt={4} size="sm" onClick={() => auth.signinWithGithub()}>
           Sign In
